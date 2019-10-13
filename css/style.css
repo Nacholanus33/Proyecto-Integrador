@@ -1,0 +1,10 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.login-section{
+    background-color: rgba(0, 0, 0, .5);
+    height: 400px;
+    width: 50%;
+}
