@@ -40,7 +40,7 @@ background-size: cover;
     position: absolute;
     left: 28px;
     font-size: 22px;
-    padding-top: 4px;
+    padding-top: 4px;  
 }
 
 .form-group#user-group::before{
