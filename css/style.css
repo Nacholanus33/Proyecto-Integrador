@@ -62,6 +62,9 @@ button{
 }
 
 /* Aqui comienza página de pérfil */
+#perfil{
+    background-image: url(../img/fondo1.jpg);
+}
 #fila1-perfil{
     margin: 20px;
 }
