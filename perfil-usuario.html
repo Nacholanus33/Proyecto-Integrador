@@ -7,51 +7,79 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Mi Perfil</title>
+    <title>Perfil</title>
   </head>
   <body>
-    <main class="profile-body">
-      <div class="container">
-          <div class="row profile">
-              <div class="col-md-3">
-                  <div class="profile-sidebar">
-                      <div class="profile-user-pic">
-                          <img src="img/—Pngtree—vector users icon_3762775.png">
-                      </div>
-                      <div class="profile-user-title">
-                        <div class="profile-user-name">
-                          Comprador 
-                        </div>
-                        <div class="profile-user-job">
-                          developer
-                        </div>
-                      </div>
-                      <div class="profile-user-buttons">
-                        <button class="btn btn-success btn-sm">Follow</button>
-                        <button class="btn btn-danger btn-sm">Message</button>
-                      </div>
-                      <div class="profile-user-menu">
-                        <ul class="nav">
-                          <li class="active"><a href="">Resumen de Cuenta</i></a></li>
-                          <li><a href="">Historial de Compras</a></li>
-                          <li><a href="">Articulos Seleccionados</a></li>
-                          <li><a href="">Ayuda</a></li>
-                          
-                        </ul>
-                      </div>
+    <div class="container" id="perfil">
+      <div class="row" id="fila1-perfil">
+        <div class="col-md-4" id="sociales-perfil">
+          <img src="https://via.placeholder.com/300x250" alt="Foto Perfil">
+          <h2>Primer Comprador</h2>
+          <a class="btn btn-primary btn-xs" href="#">Facebook</a>
+          <a class="btn btn-primary btn-xs" href="#">Twitter</a>
+          <a class="btn btn-primary btn-xs" href="#">Instagram</a>
 
-                  </div>
-              </div>
-              <div class="col-md-9">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, in ullam sunt cumque deserunt perferendis doloribus, harum nostrum quisquam voluptatum impedit corrupti molestias dolorum! Officiis nulla deserunt quas magnam ut.</p>
-              </div>
-
+        </div>
+        <div class="card text-center" id="compra-actual-perfil">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Tu compra Actual</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Seguir comprando</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Historial de compras</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Gracias por elegir nuestros productos</h5>
+              <p class="card-text">Nuestro compromiso es traerte siempre la mejor calidad a un precio justo</p>
+              <a href="#" class="btn btn-primary">Seguí comprando</a>
+            </div>
           </div>
+      </div>
+      <div class="row" id="prod-relacionados">
+          <div class="card-group" id="grupo-rel">
+              <div class="card">
+                <img src="img/mochila3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Podes sumarle esta mochila a tu pedido</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/mochila6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Esta otra mochila podria ser tuya también</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/mochila7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">¿Que tal esta mochila para tu notebook?</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
       </div>
 
 
 
-  </main>
+    </div>
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
