@@ -28,7 +28,7 @@
   </div>
 </div>
     </div>
-    <div id="div3" class="col-4">
+    <div id="div3" class="col-12 col-lg-4">
       <h3 id="alpina">Mochila Alpina especial para excursiones</h3>
       <div id="ofertas" class="border border-primary">
       <h4><strong id="oferta">OFERTA LIMITADA</strong></h4>
@@ -48,9 +48,24 @@
 
 
 </div>
-<div id="row3" class="row">
-  <div class="col">
-
+<div id="rownueva" class="row">
+  <div id="row3" class="col">
+    <h4>Descripción</h4>
+    <ul id="lista">
+      <li>Dos compartimientos principales grandes</li>
+      <li>Correas acolchadas hombros de perfecto ajuste</li>
+      <li>Bolsillo lateral para botella de agua</li>
+      <li>Tejido Cordura de primera calidad con fondo de piel de gamuza</li>
+    </ul>
+  </div>
+  <div id="row4" class="col">
+    <h4>Especificaciones</h4>
+    <ul id="lista">
+      <li>Capacidad: 25 litros</li>
+      <li>Peso: 0,3 Kg</li>
+      <li>Dimensiones: 42 x 31 x 21 cm</li>
+      <li>Tela: 80% Poliéster 20% Gamuza</li>
+    </ul>
   </div>
 
 </div>
