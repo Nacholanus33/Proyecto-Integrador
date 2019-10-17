@@ -23,10 +23,10 @@
     <li><a href="#">SUCURSALES</a></li>
     </div>
     <div class="col-2">
-    <li><a href="#">CONTACTO</a></li>
+    <li><a href="form_contacto.php">CONTACTO</a></li>
     </div>
     <div class="col-2">
-    <li><a href="#">REGISTRARSE</a></li>
+    <li><a href="form_registro.php">REGISTRARSE</a></li>
     </div>
   </ul>
   </div>

@@ -27,7 +27,7 @@
        Contactanos
      </a>
      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-       <a class="dropdown-item" href="#">Contacto</a>
+       <a class="dropdown-item" href="form_contacto.php">Contacto</a>
        <a class="dropdown-item" href="preguntas.php">Preguntas más frecuentes</a>
        <a id="Facebook" target="_blank" class="dropdown-item fab fa-facebook-square" href="https://Facebook.com">Nuestro Facebook</a>
        <a id="instagram" target="_blank" class="dropdown-item fab fa-instagram" href="https://Instagram.com">Nuestro Instagram</a>
@@ -37,12 +37,12 @@
      <div class="col-1">
    </li>
    <li class="nav-item">
-     <a class="nav-link" href="#">Log in</a>
+     <a class="nav-link" href="login.php">Log in</a>
    </li>
    </div>
    <div class="col-1">
    <li class="nav-item">
-     <a class="nav-link" href="#">Sign Up</a>
+     <a class="nav-link" href="form_registro.php">Sign Up</a>
    </li>
    </div>
  </ul>

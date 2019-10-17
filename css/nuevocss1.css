@@ -344,7 +344,17 @@ body{
     padding-left: 6.5vw;
   }
 }
-
+article#item {
+  border-style: solid;
+  border-color: rgba(105,105,105,0.7);
+  border-radius: 5px;
+  background-color: white;
+  font-style: italic;
+}
+p#precio_cart {
+  font-style: normal;
+  font-weight: 600;
+}
 /**#main_section{
 
 }
