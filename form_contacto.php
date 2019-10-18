@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/nuevocss1.css">
     <link rel="stylesheet" href="css/form_contacto.css">
     <?php include("head.php") ?>
     <meta charset="utf-8">
