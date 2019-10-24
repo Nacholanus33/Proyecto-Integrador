@@ -267,9 +267,7 @@ text-decoration: underline;
   border: none;
   color: grey;
 }
-.boton{
 
-}
 .iconos{
   margin-top:42%;
 }
@@ -284,8 +282,7 @@ text-decoration: underline;
 #lista{
   list-style-type: square;
 }
-body{
-}
+
 @media (max-width: 768px){
   #regresar{
       width:108%;
@@ -404,3 +401,10 @@ p#precio_cart {
   margin:20px;
 }
 /* */
+#compra-actual-perfil{
+  opacity: .5;
+}
+#prod-relacionados{
+  background:grey;
+  margin-top: 40px;
+}
