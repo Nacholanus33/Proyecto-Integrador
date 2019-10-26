@@ -28,7 +28,7 @@
                     <a href="#">Recordar contraseña</a>
                 </div>
                 <div class="col-12 forgot">
-                        <a href="#">Registro</a>
+                        <a href="registro1.php">Registro</a>
                     </div>
 
             </div>
