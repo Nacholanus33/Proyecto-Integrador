@@ -410,7 +410,9 @@ p#precio_cart {
 }
 
 /* acá comienza productos */
-
+#productos{
+  display: flex;
+}
 
 
 /* acá comienza login */
@@ -457,13 +459,7 @@ p#precio_cart {
       padding-top: 4px;
   }
   
-  .form-group#user-group::before{
-      content: "\f007";
-  }
-  .form-group#pass-group::before{
-      content: "\f023";
-  }
-  button{
+    button{
       width: 60%;
       margin: 5px 0 25px;
   }

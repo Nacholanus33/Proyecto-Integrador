@@ -13,7 +13,7 @@
  </div>
  <div class="col-2 col-lg-1">
    <li class="nav-item">
-     <a class="nav-link" href="#">Productos</a>
+     <a class="nav-link" href="productos.php">Productos</a>
    </li>
    </div>
    <div class="col-2">
