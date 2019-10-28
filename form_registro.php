@@ -22,12 +22,12 @@
       </div> <br>
       <div class="container">
       <form id="form_registro" class="row" action="index.html" method="post">
-        <label class="col-3 col-md-1" id="nombre_registro" for="nombre_registro">Nombre/s: </label>
-        <input class="col-12  col-sm-8 col-md-6" type="text" name="nombre_registro" /> <br>
-          <label class="col-3 col-md-1" id="apellido_registro"for="apellido_registro">Apellido/s: </label>
-          <input class="col-12 col-sm-8 col-md-6" type="text" name="apellido_registro" > <br>
-          <label class="col-3  col-md-1"  for="pais_registro">País </label>
-          <select id="pais_registro" class="col-12 col-sm-8 col-md-6" name="pais_registro"><br>
+        <label class="col-3 col-md-1" id="nombre_registro" for="nombre">Nombre/s: </label>
+        <input class="col-12  col-sm-8 col-md-6" type="text" name="nombre" required /> <br>
+          <label class="col-3 col-md-1" id="apellido_registro"for="apellido">Apellido/s: </label>
+          <input class="col-12 col-sm-8 col-md-6" type="text" name="apellido" required > <br>
+          <label class="col-3  col-md-1"  for="pais">País </label>
+          <select id="pais_registro" class="col-12 col-sm-8 col-md-6" name="pais"><br>
             <option value="arg_registro">Argentina</option>
             <option value="bra_registro">Brasil</option>
             <option value="chi_registro">Chile</option>
@@ -39,15 +39,15 @@
             <option value="col_registro">Colombia</option>
             <option value="ven_registro">Venezuela</option>
             </select> <br>
-          <label id="pass_registro" class="col-3 col-md-1" for="pass_registro">Contraseña: </label>
-          <input class="col-12 col-sm-8 col-md-6" type="password" name="pass_registro" required><br>
+          <label id="pass_registro" class="col-3 col-md-1" for="pass">Contraseña: </label>
+          <input class="col-12 col-sm-8 col-md-6" type="password" name="pass" required><br>
           <label id="pass_registro_conf" class="col-6 col-md-2" for="pass_registro_conf">Repita la contraseña: </label>
           <input class="col-12 col-sm-8 col-md-6" type="password" name="pass_registro_conf" required><br>
-          <label class="col-3 col-md-1" id="mail_registro" for="mail_registro">E-mail:</label>
-          <input class="col-12 col-sm-8 col-md-6" type="email" name="mail_registro" required/><br>
+          <label class="col-3 col-md-1" id="mail_registro" for="mail">E-mail:</label>
+          <input class="col-12 col-sm-8 col-md-6" type="email" name="mail" required/><br>
           <label class="col-6 col-md-2" id="mail_registro_conf" for="mail_registro_conf">Repita su E-mail:</label>
           <input class="col-12 col-sm-8 col-md-6" type="email" name="mail_registro_conf" required/><br>
-          <button type="submit" name="submit_registro" class="btn btn-success">Creá tu cuenta</button>
+          <button type="submit" name="submit" class="btn btn-success">Creá tu cuenta</button>
           </div>
         </form>
     </div>
