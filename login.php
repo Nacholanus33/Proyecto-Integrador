@@ -2,7 +2,19 @@
 
 
 if ($_POST) {
-  $json = file_get_contents("datos.json")
+  $json = file_get_contents("datos.json");
+  $usuarios = json_decode($json, true);
+  foreach ($usuarios as $usuario) {
+    if ($usuario["email"] === $_POST["email"] && password_verify($_POST["password"], $usuario ["password"]) ) {
+      header("Location: bienvenido.php ");
+      exit();
+    }
+  }
+
+
+
+
+
 }
 
 
@@ -36,10 +48,10 @@ if ($_POST) {
                 </div>
                 <form  class="col-12">
                     <div class="form-group user-group">
-                        <input type="text" class="form-control" placeholder="Nombre de Usuario">
+                        <input type="email" class="form-control" placeholder="Email">
                     </div>
                     <div class="form-group pss-group "><i class="fas fa-user"></i>
-                            <input type="password" class="form-control" placeholder="contraseña">
+                            <input type="password" class="form-control" placeholder="Contraseña">
                         </div>
                         <button type="submit" class= "btn btn-primary"><i class="fas fa-sign-in-alt"></i>  Ingresar</button>
                 </form>
@@ -47,7 +59,7 @@ if ($_POST) {
                     <a href="#">Recordar contraseña</a>
                 </div>
                 <div class="col-12 forgot">
-                        <a href="registro1.php">Registro</a>
+                        <a href="registro1.php">Registrarme</a>
                     </div>
 
             </div>
