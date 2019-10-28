@@ -77,5 +77,6 @@
 
 
     <?php require "footer.php"?>
+     <?php include ("scripts.php") ?>
 </body>
 </html>

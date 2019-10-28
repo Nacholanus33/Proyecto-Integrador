@@ -1,3 +1,22 @@
+<?php
+
+
+if ($_POST) {
+  $json = file_get_contents("datos.json")
+}
+
+
+
+
+
+
+
+
+
+
+ ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +26,7 @@
 </head>
 <body>
     <?php require "header.php"?>
-    
+
     <div class="body-login">
       <div class="modal-dialog text-center">
         <div class="col sm-8 main-section">
@@ -37,11 +56,16 @@
 
 
         </div>
-    
-    </div>
 
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 
     <?php require "footer.php"?>
+     <?php include ("scripts.php") ?>
 </body>
 </html>
