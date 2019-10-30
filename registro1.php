@@ -1,26 +1,31 @@
-<?php  
+<?php
 
 if ($_POST){
-
-    if($_POST['password'] != $_POST['password_confirmation']){
-        $errors['password_confirmation'] = 'El password no coincide';
+    if($_POST["password"] != $_POST["password_confirmation"] && strlen($_POST["password"]) != 0){
+        $errors["password"] = "El password no coincide";
 
     }
 
     if (empty($errors)){
-        $json = file_get_contents('users.json');
+        $json = file_get_contents("users.json");
 
     $users = json_decode($json, true);
+    foreach ($users as $user) {
+      if ($user["email"] == $_POST["email"]) {
+       $errorMail = "El mail ya esta registrado";
+      }
+        }
 
     $users[] =[
-        'email'=> $_POST['email'],
-        'password'=> password_hash( $_POST['password'], PASSWORD_DEFAULT),
+        "email"=> $_POST["email"],
+        "password"=> password_hash( $_POST["password"], PASSWORD_DEFAULT),
     ];
     $json = json_encode($users, JSON_PRETTY_PRINT);
-    file_put_contents('users.json',$json);
+    file_put_contents("users.json",$json);
+    header("location: index.php");
     }
 
-    
+
 }
 
 ?>
@@ -73,6 +78,11 @@ if ($_POST){
                             </div>
                             <div class="form-group pss-group ">
                                 <input type="password" class="form-control" placeholder="Confirma tu contraseña" name="password_confirmation">
+                                <p><?php if (isset($errors["password"])): ?>
+                                  <?php echo $errors["password"]?>
+
+                                <?php endif; ?>
+                                </p>
                             </div>
                             <button type="submit" class= "btn btn-primary">Registrarse</button>
                     </form>
