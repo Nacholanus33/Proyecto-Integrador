@@ -1,3 +1,33 @@
+<?php  
+
+if ($_POST){
+
+    if($_POST['password'] != $_POST['password_confirmation']){
+        $errors['password_confirmation'] = 'El password no coincide';
+
+    }
+
+    if (empty($errors)){
+        $json = file_get_contents('users.json');
+
+    $users = json_decode($json, true);
+
+    $users[] =[
+        'email'=> $_POST['email'],
+        'password'=> password_hash( $_POST['password'], PASSWORD_DEFAULT),
+    ];
+    $json = json_encode($users, JSON_PRETTY_PRINT);
+    file_put_contents('users.json',$json);
+    }
+
+    
+}
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -34,17 +64,17 @@
                     <div class="col-12 user-img">
                         <img src="img/avatar1.png" alt="Avatar-user">
                     </div>
-                    <form  class="col-12">
+                    <form  class="col-12" action="?action=register" method="post">
                         <div class="form-group user-group">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="email" class="form-control" placeholder="Email" name="email">
                         </div>
-                        <div class="form-group pss-group "><i class="fas fa-user"></i>
-                                <input type="password" class="form-control" placeholder="Contraseña">
+                        <div class="form-group pss-group ">
+                                <input type="password" class="form-control" placeholder="Contraseña" name="password">
                             </div>
-                            <div class="form-group pss-group "><i class="fas fa-user"></i>
-                                <input type="password" class="form-control" placeholder="Confirma tu contraseña">
+                            <div class="form-group pss-group ">
+                                <input type="password" class="form-control" placeholder="Confirma tu contraseña" name="password_confirmation">
                             </div>
-                            <button type="submit" class= "btn btn-primary"><i class="fas fa-sign-in-alt"></i>  Registrarse</button>
+                            <button type="submit" class= "btn btn-primary">Registrarse</button>
                     </form>
                 </div>
             </div>
