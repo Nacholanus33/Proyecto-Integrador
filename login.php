@@ -9,6 +9,10 @@ if ($_POST) {
       header("Location: bienvenido.php ");
       exit();
     }
+    if ($usuario["email"] === $_POST["email"] && password_verify($_POST["password"], $usuario ["password"]) {
+      // code...
+    }
+
   }
 
 
