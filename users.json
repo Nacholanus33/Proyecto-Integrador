@@ -10,5 +10,9 @@
     {
         "email": "hello@holmail.com",
         "password": "$2y$10$WzAJuafFjwrTwCR4S8NlrOLKb9k1c1ycXdw4LwuYFVhERFjd7o8pG"
+    },
+    {
+        "email": "hello@holmail.com",
+        "password": "$2y$10$6elgJl1k\/IQ1EC183JvB1uIK\/3OW5nfHtg5mI3dLGcF2GGlHoY6Fu"
     }
 ]
