@@ -1,7 +1,7 @@
 body{
+  background-image: url("../imagenes/backgroundd.jpg");
 font-family: sans-serif;
 color: grey;
-
 }
 a{
   text-decoration: none;
@@ -140,8 +140,8 @@ max-width: 40%;
   margin-top: 20px;
 }
 #footerr{
-  background-color: #892417;
-  margin-top: 50px;
+  background-color: #880011;
+  margin-top: 30px;
   width: 100%;
   height: 100%;
   border-radius: 40px;
@@ -156,9 +156,6 @@ aside ul li a{
 footer{
   width: 100%;
   color: black;
-}
-#desplegue_redes{
-  margin-bottom: 55px;
 }
 html {
   min-height: 100%;
@@ -266,11 +263,13 @@ text-decoration: underline;
 }
 .btn-danger{
   background-color:#892517;
-  padding-top: 8px;
+  padding-top:20px;
   border: none;
   color: grey;
 }
+.boton{
 
+}
 .iconos{
   margin-top:42%;
 }
@@ -285,7 +284,8 @@ text-decoration: underline;
 #lista{
   list-style-type: square;
 }
-
+body{
+}
 @media (max-width: 768px){
   #regresar{
       width:108%;
@@ -373,26 +373,14 @@ text-decoration: underline;
     padding-left: 6.5vw;
   }
 }
-article#item {
-  border-style: solid;
-  border-color: rgba(105,105,105,0.7);
-  border-radius: 5px;
-  background-color: white;
-  font-style: italic;
-}
-p#precio_cart {
-  font-style: normal;
-  font-weight: 600;
-}
-/**#main_section{
 
+/**#main_section{
 }
 #container_carousel{
   width: 100px;
   height: 200px;
 }
 .carousel-inner{
-
 }
 #navegacion{
   width: 100%;
@@ -404,106 +392,3 @@ p#precio_cart {
   margin:20px;
 }
 /* */
-#compra-actual-perfil{
-  opacity: .5;
-}
-#prod-relacionados{
-  background:grey;
-  margin-top: 40px;
-}
-
-/* acá comienza productos */
-#productos{
-  display: flex;
-}
-
-
-/* acá comienza login */
-.body-login{
-
-  }
-
-  .main-section{
-      margin: 0 auto;
-      margin-top: 25%;
-      padding: 0;
-
-  }
-  .modal-content{
-      background-color: #3b4652;
-      opacity: .75;
-      padding: 0 20px;
-      box-shadow: 0px 0px 3px #848484;
-
-  }
-  .user-img{
-      margin-top:-80px;
-      margin-bottom: 35px;;
-  }
-  .user-img img{
-      width: 100px;
-      height: 100px;
-      box-shadow: 0px 0px 3px #848484;
-      border-radius: 50%;
-  }
-  .form-group input{
-      height: 42px;
-      font-size: 18px;
-      border: 0;
-      padding-left: 34px;
-      border-radius: 10px;
-  }
-
-  .form-group::before{
-      font-family: "Font Awesome\ 5 Free";
-      position: absolute;
-      left: 28px;
-      font-size: 22px;
-      padding-top: 4px;
-  }
-
-    button{
-      width: 60%;
-      margin: 5px 0 25px;
-  }
-  .forgot{
-      padding: 5px 0;
-
-  }
-  .forgot a{
-      color: white;
-  }
-
-  /* acá va registro*/
-  h1 {
-    display: flex;
-    justify-content: center;
-    font-family: sans-serif;
-    border-style: double;
-    border-color: rgba(105,105,105,0.7);
-    border-radius: 5px;
-  }
-  #form_registro {
-  flex-flow: column wrap;
-  align-content: center;
-  margin-left: 8.33%;
-  margin-right: 8.33%;
-  position: relative;
-  top: 50px;
-  margin-left: 0 auto;
-  }
-  #title {
-    text-align: center;
-  }
-  .container{
-    text-align: center;
-    z-index: -1;
-  }
-  label {
-    position: relative;
-    right: 10px;
-    margin-top: 15px;
-  }
-  button {
-    margin-top: 15px;
-  }

@@ -1,7 +1,8 @@
+/*INICIO*/
 body{
+background-image: url("../imagenes/backgroundd.jpg");
 font-family: sans-serif;
 color: grey;
-
 }
 a{
   text-decoration: none;
@@ -55,23 +56,23 @@ nav{
   padding-left: 0px;
   padding-right: 0px;
 }
-h5{
+.titulo{
   display: inline-block;
   position: relative;
   color: grey;
 }
-h5::after,h5::before{
+.titulo::after,.titulo::before{
   content: "";
   position: absolute;
-  width: 100vw;
+  width: 36vw;
   height: 1px;
   background-color: grey;
   top: 0.6em;
 }
-h5::before{
+.titulo::before{
   left: 102%;
 }
-h5::after{
+.titulo::after{
   right: 102%;
 }
 #computadora{
@@ -152,10 +153,6 @@ aside ul{
 }
 aside ul li a{
   color: grey;
-}
-footer{
-  width: 100%;
-  color: black;
 }
 #desplegue_redes{
   margin-bottom: 55px;

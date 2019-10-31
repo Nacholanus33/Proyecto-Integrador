@@ -42,7 +42,7 @@
    </div>
    <div class="col-1">
    <li class="nav-item">
-     <a class="nav-link" href="form_registro.php">Sign Up</a>
+     <a class="nav-link" href="registro1.php">Sign Up</a>
    </li>
    </div>
  </ul>
