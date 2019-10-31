@@ -1,32 +1,48 @@
 <?php
-
+$email = "";
+$contrasea = "";
+$repContrasea="";
 if ($_POST){
+  $json = file_get_contents("users.json");
+  $users = json_decode($json, true);
+  $email = $_POST["email"];
+  $contrasea = $_POST["password"];
+  $repContrasea = $_POST["password_confirmation"];
     if($_POST["password"] != $_POST["password_confirmation"] && strlen($_POST["password"]) != 0){
-        $errors["password"] = "El password no coincide";
+        $errors["password"] = "Las contraseñas no coinciden";
 
     }
-
-    if (empty($errors)){
-        $json = file_get_contents("users.json");
-
-    $users = json_decode($json, true);
-    foreach ($users as $user) {
-      if ($user["email"] == $_POST["email"]) {
-       $errorMail = "El mail ya esta registrado";
-      }
+    if (strlen($_POST["password"]) < 8) {
+      $errors["largopassword"] = "La contraseña debe tener un mínimo de 8 caracteres";
+    }
+    if (strlen($_POST["email"]) == 0 || filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) == false) {
+      $errors["nohayemail"] = "Debe ingresar un email válido";
         }
+        foreach ($users as $user) {
+          if ($user["email"] == $_POST["email"]) {
+           $errors["mail"] = "El mail ya esta registrado";
+          }
+         }
+    if (empty($errors)){
 
-    $users[] =[
-        "email"=> $_POST["email"],
-        "password"=> password_hash( $_POST["password"], PASSWORD_DEFAULT),
-    ];
-    $json = json_encode($users, JSON_PRETTY_PRINT);
-    file_put_contents("users.json",$json);
-    header("location: index.php");
+
+
+
+          $users[] =[
+              "email"=> $_POST["email"],
+              "password"=> password_hash( $_POST["password"], PASSWORD_DEFAULT),
+          ];
+          $json = json_encode($users, JSON_PRETTY_PRINT);
+          file_put_contents("users.json",$json);
+          header("location: perfil-usuario.php");
+         }
+
+
+
+
     }
 
 
-}
 
 ?>
 
@@ -71,18 +87,37 @@ if ($_POST){
                     </div>
                     <form  class="col-12" action="?action=register" method="post">
                         <div class="form-group user-group">
-                            <input type="email" class="form-control" placeholder="Email" name="email">
+                            <input type="email" class="form-control" placeholder="Email" name="email" value="<?=$email?>">
+                            <p><strong> <?php if (isset($errors["mail"])): ?>
+                              <?php echo $errors["mail"]?>
+
+
+                            <?php endif; ?>
+                          </strong>  </p>
+                          <p><strong> <?php if (isset($errors["nohayemail"])): ?>
+                            <?php echo $errors["nohayemail"]?>
+
+
+                          <?php endif; ?>
+                        </strong>  </p>
                         </div>
                         <div class="form-group pss-group ">
-                                <input type="password" class="form-control" placeholder="Contraseña" name="password">
-                            </div>
-                            <div class="form-group pss-group ">
-                                <input type="password" class="form-control" placeholder="Confirma tu contraseña" name="password_confirmation">
-                                <p><?php if (isset($errors["password"])): ?>
-                                  <?php echo $errors["password"]?>
+                                <input type="password" class="form-control" placeholder="Contraseña" name="password" value="<?=$contrasea?>">
+                                <p><strong> <?php if (isset($errors["largopassword"])): ?>
+                                  <?php echo $errors["largopassword"]?>
+
 
                                 <?php endif; ?>
-                                </p>
+                              </strong>  </p>
+                            </div>
+                            <div class="form-group pss-group ">
+                                <input type="password" class="form-control" placeholder="Confirma tu contraseña" name="password_confirmation" value="<?=$repContrasea?>">
+                                <p><strong> <?php if (isset($errors["password"])): ?>
+                                  <?php echo $errors["password"]?>
+
+
+                                <?php endif; ?>
+                              </strong>  </p>
                             </div>
                             <button type="submit" class= "btn btn-primary">Registrarse</button>
                     </form>
