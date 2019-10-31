@@ -507,3 +507,11 @@ p#precio_cart {
   #contraseñas{
     color: black;
   }
+  .bienvenido{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: -120px;
+  }
+  .perfilcompletar{
+    margin-right: 50px;
+  }

@@ -1,20 +1,28 @@
 <?php
-
-
+$noerrors["mail1"] = "";
+$email = "";
+$contrasea = "";
 if ($_POST) {
-  $json = file_get_contents("datos.json");
+  $noerrors["mail1"] = "Este Email no se encuentra registrado";
+  $email = $_POST["email"];
+  $contrasea = $_POST["password"];
+  $json = file_get_contents("users.json");
   $usuarios = json_decode($json, true);
   foreach ($usuarios as $usuario) {
-    if ($usuario["email"] === $_POST["email"] && password_verify($_POST["password"], $usuario ["password"]) ) {
-      header("Location: bienvenido.php ");
-      exit();
+    if ($usuario["email"] === $_POST["email"] && password_verify($_POST["password"], $usuario ["password"]) == false) {
+      $errors["password"] = "La contraseña es incorrecta";
     }
-    if ($usuario["email"] === $_POST["email"] && password_verify($_POST["password"], $usuario ["password"]) {
-      // code...
+    if ($usuario["email"] === $_POST["email"]) {
+      $noerrors["mail1"] = "hola";
     }
+   }
+   if (empty($errors) && $noerrors["mail1"] == "hola") {
+     header("Location: bienvenido.php");
+     exit();
+   }
+ }
 
-  }
-}
+
 
 
  ?>
@@ -37,12 +45,22 @@ if ($_POST) {
                 <div class="col-12 user-img">
                     <img src="img/avatar1.png" alt="Avatar-user">
                 </div>
-                <form  class="col-12">
+                <form  class="col-12" action="" method="post">
                     <div class="form-group user-group">
-                        <input type="email" class="form-control" placeholder="Email">
+                        <input type="email" class="form-control" placeholder="Email" name="email" value="<?=$email?>">
+                        <p><strong><?php if ($noerrors["mail1"] == "Este Email no se encuentra registrado"): ?>
+                          <?php echo $noerrors["mail1"]?>
+
+
+                        <?php endif;?> </strong></p>
                     </div>
                     <div class="form-group pss-group "><i class="fas fa-user"></i>
-                            <input type="password" class="form-control" placeholder="Contraseña">
+                            <input type="password" class="form-control" placeholder="Contraseña" name="password" value="<?=$contrasea?>">
+                            <p><strong><?php if (isset($errors["password"])): ?>
+                              <?php echo $errors["password"]?>
+
+
+                            <?php endif; ?> </strong></p>
                         </div>
                         <button type="submit" class= "btn btn-primary"><i class="fas fa-sign-in-alt"></i>  Ingresar</button>
                 </form>
