@@ -2,7 +2,7 @@
         <ul>
     <div class="row">
     <div class="col-2">
-    <li><a href="proyecto.php">INICIO</a></li>
+    <li><a href="index.php">INICIO</a></li>
     </div>
     <div class="col-2">
     <li><a href="#">CONOCÉNOS</a></li>

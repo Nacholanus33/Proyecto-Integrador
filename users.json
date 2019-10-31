@@ -1,18 +1,22 @@
 [
     {
-        "email": "hello@holmail.com",
-        "password": "$2y$10$oF1UTVLexEkN0t3dRK1pdO2dOhRBv9cLSE9u45Yc.CQQoYy.rfvC2"
+        "email": "nacholanus@gmail.com",
+        "password": "$2y$10$t.2HvUuM25LF\/ZccmMpSDu\/6vhyAVfesZ2osl5X1qj8WtRWYEnopa",
+        "avatar": "uploads\/fe5b39da5e57ff5990969fdf2a468cd0."
     },
     {
-        "email": "hello@holmail.com",
-        "password": "$2y$10$UthNCEJ\/EClbwfercX5EQen1LPA7QvY.RRH3Yma\/oC.Ytf3POFLb6"
+        "email": "asd@q.com",
+        "password": "$2y$10$p00aoYVfh\/CQ5GJrn96tA.RSRwM1FAYKdVZ5kAHkkp5N1xrel5Ll6",
+        "avatar": "uploads\/a6f419334d10ffb055e8116596eb88a0."
     },
     {
-        "email": "hello@holmail.com",
-        "password": "$2y$10$WzAJuafFjwrTwCR4S8NlrOLKb9k1c1ycXdw4LwuYFVhERFjd7o8pG"
+        "email": "nacholanus33@gmail.com",
+        "password": "$2y$10$HPVpXXC9lSsPXo\/yrDwF0.PvvzX2CNrsdXjrCrBPedj65cxA\/3S3G",
+        "avatar": "uploads\/eabcd941c1492205d3594ad401dcde1a."
     },
     {
-        "email": "hello@holmail.com",
-        "password": "$2y$10$6elgJl1k\/IQ1EC183JvB1uIK\/3OW5nfHtg5mI3dLGcF2GGlHoY6Fu"
+        "email": "hola@hotmail.com",
+        "password": "$2y$10$Aeq5xWq4MhM.Hi3H6p\/7L.EddVkqUJtup.\/142MtqvAdGrX3RxB66",
+        "avatar": "uploads\/95b9ce732129193ed1b1ccf061474490."
     }
 ]

@@ -29,17 +29,18 @@
       <option value="col_contacto">Colombia</option>
       <option value="ven_contacto">Venezuela</option>
     </select> <br>
-    <label class="col-1" id="nombre_contacto" for="nombre_contacto">Nombre/s: </label>
-    <input class="col-sm-9 col-md-7 col-lg-5" type="text" name="nombre_contacto" required /> <br>
-    <label class="col-1" id="apellido_contacto"for="apellido_contacto">Apellido/s: </label>
-    <input class="col-sm-9 col-md-7 col-lg-5" type="text" name="apellido_contacto" required > <br>
-    <label class="col-1"id="mail_contacto"for="mail_contacto">E-mail:</label>
-    <input class="col-sm-9 col-md-7 col-lg-5" type="email" name="mail_contacto" required /><br>
+    <label class="col-1" id="nombre_contacto" for="nombre">Nombre/s: </label>
+    <input class="col-sm-9 col-md-7 col-lg-5" type="text" name="nombre" required /> <br>
+    <label class="col-1" id="apellido_contacto"for="apellido">Apellido/s: </label>
+    <input class="col-sm-9 col-md-7 col-lg-5" type="text" name="apellido" required > <br>
+    <label class="col-1"id="mail_contacto"for="mail">E-mail:</label>
+    <input class="col-sm-9 col-md-7 col-lg-5" type="email" name="mail" required /><br>
     <small id="emailHelp" class="form-text text-muted">Nunca compartiríamos tu mail con ningún tercero.</small>
-    <label class="col-12" id="msj_contacto_cartel" for="msj_contacto">Mensaje:</label>
-    <textarea class="col-12 col-sm-9 col-md-7 col-lg-5" id="msj_contacto" name="msj_contacto" placeholder="Escriba su mensaje aquí y responderemos a la brevedad: " required ></textarea><br>
+    <label class="col-12" id="msj_contacto_cartel" for="msj">Mensaje:</label>
+    <textarea class="col-12 col-sm-9 col-md-7 col-lg-5" id="msj_contacto" name="msj" placeholder="Escriba su mensaje aquí y responderemos a la brevedad: " required ></textarea><br>
     <button class="btn btn-primary col-sm-9 col-md-7 col-lg-5"type="submit">Enviar</button>
     <button class="btn btn-secondary col-sm-9 col-md-7 col-lg-5"type="reset">Borrar</button><br>
+    <? Bienvenida()?>
   </form>
 </div>
 <footer>

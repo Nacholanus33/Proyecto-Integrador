@@ -8,7 +8,7 @@
       <div id="navegacion" class="row">
    <div class="col-1">
    <li class="nav-item">
-     <a class="navbar-brand" href="proyecto.php">Inicio</a>
+     <a class="navbar-brand" href="index.php">Inicio</a>
    </li>
  </div>
  <div class="col-2 col-lg-1">

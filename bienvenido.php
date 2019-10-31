@@ -10,8 +10,12 @@
 
 
     <h1>BIENVENIDO</h1>
+<div class="bienvenido">
 
 
+<a  class="perfilcompletar" href="perfil-usuario.php">Completar mi perfil</a>
+<a href="index.php">Regresar al inicio</a>
+</div>
 
     <br>
     <br>
