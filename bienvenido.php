@@ -14,7 +14,7 @@
 
 
 <a  class="perfilcompletar" href="perfil-usuario.php">Completar mi perfil</a>
-<a href="proyecto.php">Regresar al inicio</a>
+<a href="index.php">Regresar al inicio</a>
 </div>
 
     <br>
