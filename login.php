@@ -45,7 +45,7 @@ if ($_POST) {
                 <div class="col-12 user-img">
                     <img src="img/avatar1.png" alt="Avatar-user">
                 </div>
-                <form  class="col-12" action="" method="post">
+                <form  class="col-12" action="?action=login" method="post">
                     <div class="form-group user-group">
                         <input type="email" class="form-control" placeholder="Email" name="email" value="<?=$email?>">
                         <p><strong><?php if ($noerrors["mail1"] == "Este Email no se encuentra registrado"): ?>
@@ -62,6 +62,12 @@ if ($_POST) {
 
                             <?php endif; ?> </strong></p>
                         </div>
+                        <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+    <label class="form-check-label" for="defaultCheck1">
+      Recordar usuario
+    </label>
+  </div>
                         <button type="submit" class= "btn btn-primary"><i class="fas fa-sign-in-alt"></i>  Ingresar</button>
                 </form>
                 <div class="col-12 forgot">

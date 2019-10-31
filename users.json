@@ -1,18 +1,17 @@
 [
     {
         "email": "nacholanus@gmail.com",
-        "password": "$2y$10$WEiKlph8z2vsefuoVv3gZOljkEC7SQf3GlUti9Gch2lSjAT1PoqVO"
-    },
-    {
-        "email": "ineschliseman@gmail.com",
-        "password": "$2y$10$v13am0p36HxxI7RU8CMfreRqQvoqUP\/yIM3\/tDFTmazgXk11Sdn7y"
+        "password": "$2y$10$t.2HvUuM25LF\/ZccmMpSDu\/6vhyAVfesZ2osl5X1qj8WtRWYEnopa",
+        "avatar": "uploads\/fe5b39da5e57ff5990969fdf2a468cd0."
     },
     {
         "email": "asd@q.com",
-        "password": "$2y$10$\/\/1D8pou7gyBYqQS10k.fuhRkyGw5yqYaw684L.LmR6ribKe26zJK"
+        "password": "$2y$10$p00aoYVfh\/CQ5GJrn96tA.RSRwM1FAYKdVZ5kAHkkp5N1xrel5Ll6",
+        "avatar": "uploads\/a6f419334d10ffb055e8116596eb88a0."
     },
     {
         "email": "nacholanus33@gmail.com",
-        "password": "$2y$10$qaSuQRGGIIAJ8Gm4k3nbeOu5YgBHm09O657hYGoKhaUyeqHXQhF.G"
+        "password": "$2y$10$HPVpXXC9lSsPXo\/yrDwF0.PvvzX2CNrsdXjrCrBPedj65cxA\/3S3G",
+        "avatar": "uploads\/eabcd941c1492205d3594ad401dcde1a."
     }
 ]

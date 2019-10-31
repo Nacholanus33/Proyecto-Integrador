@@ -515,3 +515,19 @@ p#precio_cart {
   .perfilcompletar{
     margin-right: 50px;
   }
+.form-check-input{
+  margin-left: -10.25rem;
+}
+.form-check-label{
+  bottom:13px;
+  left: -146px;
+}
+#imagenusuario{
+  right: 141px;
+  margin-top: 0px;
+}
+#exampleFormControlFile1{
+  position: relative;
+  bottom: 5px;
+  right: 57px;
+}
