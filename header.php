@@ -27,7 +27,7 @@
        Contactanos
      </a>
      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-       <a class="dropdown-item" href="form_contacto.php">Contacto</a>
+       <a class="dropdown-item" href="contacto.php">Contacto</a>
        <a class="dropdown-item" href="preguntas.php">Preguntas más frecuentes</a>
        <a id="Facebook" target="_blank" class="dropdown-item fab fa-facebook-square" href="https://Facebook.com">Nuestro Facebook</a>
        <a id="instagram" target="_blank" class="dropdown-item fab fa-instagram" href="https://Instagram.com">Nuestro Instagram</a>
