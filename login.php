@@ -17,7 +17,7 @@ if ($_POST) {
     }
    }
    if (empty($errors) && $noerrors["mail1"] == "hola") {
-     header("Location: bienvenido.php");
+     header("Location:perfil-usuario.php");
      exit();
    }
  }
@@ -61,13 +61,15 @@ if ($_POST) {
 
 
                             <?php endif; ?> </strong></p>
+
+                            <div class="form-check">
+                              <!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Recordar usuario
+                              </label>
+                            </div> -->
                         </div>
-                        <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
-      Recordar usuario
-    </label>
-  </div>
+                        
                         <button type="submit" class= "btn btn-primary"><i class="fas fa-sign-in-alt"></i>  Ingresar</button>
                 </form>
                 <div class="col-12 forgot">
@@ -92,7 +94,7 @@ if ($_POST) {
     <br>
 
 
-    <?php require "footer.php"?>
+    
      <?php include ("scripts.php") ?>
 </body>
 </html>

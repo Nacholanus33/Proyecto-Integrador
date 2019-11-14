@@ -2,18 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/nuevocss1.css">
+    <!-- <link rel="stylesheet" href="css/nuevocss1.css"> -->
     <link rel="stylesheet" href="css/form_contacto.css">
     <?php include("head.php") ?>
     <meta charset="utf-8">
   </head>
   <body>
-  <header class="container.fluid d-flex">
+ 
  <?php
  include("header.php");
   ?>
-  </header>
-  <h1><b>Contactate con nosotros</b></h1>
+ 
+  <h1>Contactate con nosotros</h1>
   <div class="container">
   <form id="form_contacto" class="row" action="index.html" method="post">
     <label id="pais" class="col-1"  for="pais_contacto">País </label>
