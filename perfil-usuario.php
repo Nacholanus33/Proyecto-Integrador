@@ -1,3 +1,16 @@
+<?php
+
+session_start();
+
+// $usuario = $_POST('usuario');
+// $contrasea = $_POST ('password');
+
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +18,13 @@
 
 </head>
 <body>
-<?php require "header.php"?>
+<?php require "header-perfil.php"?>
 
 <div class="container" id="perfil">
       <div class="row" id="fila1-perfil">
         <div class="col-md-4" id="sociales-perfil">
           <img src="img/avatar1.png" alt="Foto Perfil">
-          <h2>Primer Comprador</h2>
+          <h2>Hola <? $usuario?></h2>
           <a class="btn btn-primary btn-xs" href="#">Facebook</a>
           <a class="btn btn-primary btn-xs" href="#">Twitter</a>
           <a class="btn btn-primary btn-xs" href="#">Instagram</a>

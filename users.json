@@ -15,8 +15,24 @@
         "avatar": "uploads\/eabcd941c1492205d3594ad401dcde1a."
     },
     {
+<<<<<<< HEAD
         "email": "candelanus33@gmail.com",
         "password": "$2y$10$mo3cnEZpIjOX8Birvzj8Auj275hR.dE4EOILtZq6F1JFmHXxxpQly",
         "avatar": "uploads\/46652c204bb93b3b656a748a4afae6e6."
+=======
+        "email": "hola@hotmail.com",
+        "password": "$2y$10$Aeq5xWq4MhM.Hi3H6p\/7L.EddVkqUJtup.\/142MtqvAdGrX3RxB66",
+        "avatar": "uploads\/95b9ce732129193ed1b1ccf061474490."
+    },
+    {
+        "email": "hello@yuo.com",
+        "password": "$2y$10$cL9670uA3CHFm9jmiXcJyeSuWh46zJdrgwrDPckM3ywM6qiGwoU5S",
+        "avatar": "uploads\/8d3a816c76aacadc631c3b26ab375774."
+    },
+    {
+        "email": "hola@1.com",
+        "password": "$2y$10$GD5LXMXkwrzIY9k7hVivc.goHcURwRZEZiPBsZFqSRjlNbAW7Vj4K",
+        "avatar": "uploads\/bda02e8c36c85b1050e714f9f1dd74cf."
+>>>>>>> 2c7a87b2f6d795489d7a62a8aec6fe35ee52d015
     }
 ]

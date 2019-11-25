@@ -23,7 +23,7 @@
     <li><a href="#">SUCURSALES</a></li>
     </div>
     <div class="col-2">
-    <li><a href="form_contacto.php">CONTACTO</a></li>
+    <li><a href="contacto.php">CONTACTO</a></li>
     </div>
     <div class="col-2">
     <li><a href="registro1.php">REGISTRARSE</a></li>
